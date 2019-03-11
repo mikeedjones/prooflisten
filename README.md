@@ -1,5 +1,5 @@
 # prooflisten
-A python program which uses Google’s cloud speech-to-text software to convert text extracted from a .tex file into a series of audio clips. Originally built to assist in proof-reading my thesis. I found it very useful, and have a few more details and some comparison clips on my [blog]().
+A python program which uses Google’s cloud speech-to-text software to convert text extracted from a .tex file into a series of audio clips. Originally built to assist in proof-reading my thesis. I found it very useful, and have a few more details and some comparison clips on my [blog](https://michaeledjones.tumblr.com/post/183380727169/proof-listening).
 
 # Installation
 To use the code you'll have to set yourself up with the google-cloud API. You can find an excellent quickstart guide [here](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries).
