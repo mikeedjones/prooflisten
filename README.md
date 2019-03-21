@@ -6,7 +6,7 @@ To use the code you'll have to set yourself up with the google-cloud API. You ca
 
 You can set the credential enviroment variables in an iPython console using `os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = <credentials file>`
 
-You'll also need to install [opendetex](https://github.com/pkubowicz/opendetex). I found the default detex program found in the tex installation loses alot of the content from a tex file - equations, captions etc. Opendetex is much better. Opendetex and detex both follow \include commands.
+You'll also need to install [opendetex](https://github.com/pkubowicz/opendetex). I found the default detex program found in the tex installation loses a lot of the content from a tex file - equations, captions etc. Opendetex is much better. Opendetex and detex both follow \include commands.
 
 # Useage
 
