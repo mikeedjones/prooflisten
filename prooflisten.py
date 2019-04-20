@@ -47,12 +47,13 @@ def read_sections(text, outdir='audio'):
     N=0
     i=0
     char_per_min=140000
+    pr_per_min=150
     batches=[]  
     
     while N<textlen:
         n=0
         index_batch_start=i
-        while n < char_per_min :
+        while n < char_per_min and i-index_batch_start < pr_per_min:
             n+=len(sections[i])
             i+=1
             if i >= len(sections): break
@@ -83,7 +84,7 @@ def read_text(text,outname='output'):
     # Set the text input to be synthesized
     synthesis_input = texttospeech.types.SynthesisInput(text=text)
 
-    # Build the voice request, select the language code ("en-GB") and the ssml
+    # Build the voice request, select the language code ("en-GB")
     voice = texttospeech.types.VoiceSelectionParams(
         language_code='en-GB',
         name='en-GB-Wavenet-B')
